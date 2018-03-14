@@ -12,7 +12,7 @@ export default class Home extends Component {
     return (
       <View>
         <Text>Home Screen</Text>
-        <Button title='for Fun ' onPress={() => this.props.navigation.navigate('AR')} />
+        <Button title='Victory' onPress={() => this.props.navigation.navigate('AR')} />
       </View>
     )
   }
