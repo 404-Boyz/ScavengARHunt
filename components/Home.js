@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Button } from 'react-native';
 import { StackNavigator, navigationOptions } from 'react-navigation';
+import { RootStack } from './Navigator'
+import ViroSample from './AR'
 
 export default class Home extends Component {
-
+  constructor(props) {
+    super(props)
+  }
   render() {
     return (
       <View>
         <Text>Home Screen</Text>
-        <Button onPress={() => this.props.navigation.navigate('AR')} />
+        <Button title='for Fun ' onPress={() => this.props.navigation.navigate('AR')} />
       </View>
     )
   }

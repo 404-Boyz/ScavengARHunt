@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StackNavigator } from 'react-navigation';
-import { ViroSample } from './AR';
-import { Home } from './Home'
+import ViroSample from './AR';
+import Home from './Home'
 
 
 const RootStack = StackNavigator({
@@ -17,4 +17,4 @@ const RootStack = StackNavigator({
   }
 );
 
-module.exports = RootStack;
+export default RootStack;
