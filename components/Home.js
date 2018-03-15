@@ -12,7 +12,15 @@ export default class Home extends Component {
     return (
       <View>
         <Text>Home Screen</Text>
-        <Button title='Victory' onPress={() => this.props.navigation.navigate('AR')} />
+
+        <Button title='Augmented Reality' onPress={() => this.props.navigation.navigate('AR')} />
+        <Button title='Choose Adventure' onPress={() => this.props.navigation.navigate('ChooseAdv')} />
+        <Button title='Clue List' onPress={() => this.props.navigation.navigate('ClueList')} />
+        <Button title='Log In' onPress={() => this.props.navigation.navigate('LogIn')} />
+        <Button title='Map' onPress={() => this.props.navigation.navigate('MapView')} />
+        <Button title='Profile' onPress={() => this.props.navigation.navigate('Profile')} />
+        <Button title='Sign Up' onPress={() => this.props.navigation.navigate('SignUp')} />
+
       </View>
     )
   }
